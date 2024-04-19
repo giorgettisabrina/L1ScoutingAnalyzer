@@ -16,7 +16,19 @@ A new data tier `L1SCOUT` will to be used for 2024 data.
 file dataset=/L1ScoutUGMTCALO/Run2023C-v1/RAW run=368636
 ```
 
-Event content:
+Event content (2024):
+```
+$ edmDumpEventContent root://cms-xrd-global.cern.ch//store/data/Run2023C/L1ScoutUGMTCALO/RAW/v1/000/368/636/00000/run368636_ls0400.root
+Type                                         Module               Label      Process   
+---------------------------------------------------------------------------------------
+OrbitCollection<l1ScoutingRun3::BxSums>      "l1ScCaloUnpacker"   "EtSum"    "SCHLP"   
+OrbitCollection<l1ScoutingRun3::EGamma>      "l1ScCaloUnpacker"   "EGamma"   "SCHLP"   
+OrbitCollection<l1ScoutingRun3::Jet>         "l1ScCaloUnpacker"   "Jet"      "SCHLP"   
+OrbitCollection<l1ScoutingRun3::Muon>        "l1ScGmtUnpacker"    "Muon"     "SCHLP"   
+OrbitCollection<l1ScoutingRun3::Tau>         "l1ScCaloUnpacker"   "Tau"      "SCHLP"
+```
+
+Event content (2023):
 ```
 $ edmDumpEventContent root://cms-xrd-global.cern.ch//store/data/Run2023C/L1ScoutUGMTCALO/RAW/v1/000/368/636/00000/run368636_ls0400.root
 Type                                  Module             Label     Process   
@@ -27,6 +39,7 @@ OrbitCollection<l1ScoutingRun3::Jet>    "CaloUnpacker"     ""        "SCPU"
 OrbitCollection<l1ScoutingRun3::Muon>    "GmtUnpacker"      ""        "SCPU"    
 OrbitCollection<l1ScoutingRun3::Tau>    "CaloUnpacker"     ""        "SCPU"
 ```
+
 
 Each event contains data from one orbit, i.e. a collection of BX, and are stored in an [OrbitCollection](https://github.com/cms-sw/cmssw/blob/master/DataFormats/L1Scouting/interface/OrbitCollection.h).
 
