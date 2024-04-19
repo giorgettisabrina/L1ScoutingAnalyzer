@@ -18,7 +18,6 @@ file dataset=/L1ScoutUGMTCALO/Run2023C-v1/RAW run=368636
 
 Event content (2024):
 ```
-$ edmDumpEventContent root://cms-xrd-global.cern.ch//store/data/Run2023C/L1ScoutUGMTCALO/RAW/v1/000/368/636/00000/run368636_ls0400.root
 Type                                         Module               Label      Process   
 ---------------------------------------------------------------------------------------
 OrbitCollection<l1ScoutingRun3::BxSums>      "l1ScCaloUnpacker"   "EtSum"    "SCHLP"   
